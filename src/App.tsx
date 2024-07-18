@@ -4,21 +4,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="word">Walking</div>
+      <div className="tense">Present Continuous</div>
+      <div className="genus">I/You</div>
+      <div className="input-group">
+        <input type="text" placeholder="be" />
+        <input type="text" placeholder="verb form" />
+      </div>
+      <button className="tip-button">Show Tip</button>
+      <div className="tip" id="tip">Tip: Use 'am/is/are' for present continuous.</div>
     </div>
   );
 }
